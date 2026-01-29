@@ -2,60 +2,6 @@
 
 An interactive Streamlit web application for analyzing historical Olympic Games data spanning over 120 years. Explore medal statistics, athlete performance, gender participation trends, and fascinating Olympic records.
 
-## Features
-
-### 📊 Medal Tally
-- **Global Medal Distribution**: Interactive world map showing total medals by country
-- **Year Filtering**: View medal counts for specific Olympic years or overall history
-- **Leaderboard**: Ranked table of countries by gold medals
-
-### 🌍 Overall Analysis
-- Key statistics including:
-  - Total Olympic editions
-  - Number of athletes
-  - Host cities
-  - Participating nations
-  - Sports disciplines
-- **Nations Over Time**: Visualize growth of participating nations throughout Olympic history
-
-### 🏆 Country-wise Analysis
-- Select any country to view:
-  - Medal progression over years
-  - Medal count trends
-
-### 🇮🇳 India Special Focus
-- **India's Olympic Journey** with dedicated metrics:
-  - Total Gold, Silver, and Bronze medals
-  - Medal growth visualization over years
-  - India's best-performing sports
-
-### 👥 Athlete-wise Analysis
-- **Top 15 Athletes**: View the most decorated athletes overall or by specific sport
-- Filter by sport to see sport-specific champions
-
-### 🏢 Country Analysis
-- Deep dive into individual country performance:
-  - Medals distribution across different sports
-  - Interactive visualizations for performance analysis
-
-### ⚖️ Gender Analysis
-- **Gender Participation Over Time**: Track male vs female athlete participation evolution
-- **Medal Distribution**: Compare medals won by gender
-- Insights into gender representation in Olympics
-
-### 🏆 Olympic Records & Fun Facts
-- Remarkable athlete records including:
-  - Youngest athlete in Olympic history
-  - Oldest Olympic competitor
-  - Tallest athlete
-  - Heaviest athlete
-- Display athlete details (name, country, sport, year)
-
-### 📏 Athlete Physical Stats
-- **Height vs Weight Analysis**: Scatter plots for medalists, colored by medal type and gender
-- **Age Distribution**: KDE plots showing age distribution of gold, silver, and bronze medalists
-- Filter by sport to see sport-specific patterns
-
 ## Data Source
 
 The application uses two datasets:
@@ -71,36 +17,6 @@ The application includes comprehensive data preprocessing:
 - One-hot encoding medal types (Gold, Silver, Bronze)
 - Deduplication of team events to avoid double-counting medals
 
-## Installation & Setup
-
-### Prerequisites
-- Python 3.8 or higher
-- pip package manager
-
-### Required Libraries
-```
-streamlit
-pandas
-plotly
-```
-
-### Installation Steps
-1. Clone or download the project
-2. Navigate to the project directory
-3. Install dependencies:
-```bash
-pip install streamlit pandas plotly
-```
-
-## Running the Application
-
-Start the Streamlit server:
-```bash
-streamlit run app.py
-```
-
-The application will open in your default browser at `http://localhost:8501`
-
 ## Navigation
 
 Use the sidebar menu to switch between different analysis sections:
@@ -114,56 +30,6 @@ Use the sidebar menu to switch between different analysis sections:
 8. **Gender Analysis** - Gender participation and medal statistics
 9. **Athlete Physical Stats** - Physical attributes of medal winners
 
-## Project Structure
-
-```
-Olympics/
-├── app.py                    # Main Streamlit application
-├── Olympics.ipynb           # Jupyter notebook with exploratory analysis
-├── athlete_events.csv       # Athlete and event data
-├── noc_regions.csv          # NOC to country name mapping
-└── README.md               # Project documentation
-```
-
-## Key Features of the Code
-
-- **Caching**: Uses `@st.cache_data` decorator for efficient data loading and preprocessing
-- **Interactive Filters**: Dynamic year and country selection
-- **Multiple Visualizations**: Line charts, bar charts, scatter plots, heat maps, and pie charts
-- **Responsive Design**: Multi-column layouts adapting to screen size
-
-## Visualizations Used
-
-- **Choropleth Maps**: Country-level medal distribution
-- **Line Charts**: Trends over time (nations, medal counts)
-- **Bar Charts**: Sport and category comparisons
-- **Scatter Plots**: Height vs weight analysis
-- **Pie Charts**: Gender and medal distribution
-- **Distribution Plots (KDE)**: Age distribution of medalists
-
-## Insights & Analysis
-
-The dashboard enables exploration of:
-- Which countries dominate specific sports
-- How gender participation has evolved
-- Trends in athlete age, height, and weight by medal type
-- Host country advantage in Olympic games
-- Historical records and unique athlete metrics
-
-## Notes
-
-- Some missing values in age, height, and weight are imputed using mean values
-- Medals for team events are deduplicated to avoid counting the same medal multiple times
-- All data is based on historical Olympic records available in the dataset (120+ years)
-
-## Future Enhancements
-
-Possible improvements:
-- Filter by Olympic season (Summer/Winter)
-- Predict medal counts using machine learning
-- Add athlete comparison tools
-- Export filtered data to CSV
-- Add more sports-specific analytics
 
 ## Author Notes
 
