@@ -1,4 +1,4 @@
-# 🏅 Olympics Data Analysis Dashboard
+#  Olympics Data Analysis Dashboard
 
 An interactive Streamlit web application for analyzing historical Olympic Games data spanning over 120 years. Explore medal statistics, athlete performance, gender participation trends, and fascinating Olympic records.
 
@@ -37,5 +37,5 @@ This project provides a comprehensive analysis of Olympic Games data, enabling u
 
 ---
 
-**Built with** ❤️ using Streamlit, Pandas, and Plotly
+**Built with**  using Streamlit, Pandas, and Plotly
 # Olympic-Data-Analysis
